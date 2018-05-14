@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041342C9DF6570B803399471 /* Pods_HQChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67AA65FFD97D0D8A99A5D5F /* Pods_HQChat.framework */; };
+		6B16B7BB20A1833600C0CEA1 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16B7AF20A1833600C0CEA1 /* AFURLResponseSerialization.m */; };
+		6B16B7BC20A1833600C0CEA1 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16B7B020A1833600C0CEA1 /* AFHTTPSessionManager.m */; };
+		6B16B7BD20A1833600C0CEA1 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16B7B120A1833600C0CEA1 /* AFURLConnectionOperation.m */; };
+		6B16B7BE20A1833600C0CEA1 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16B7B320A1833600C0CEA1 /* AFURLSessionManager.m */; };
+		6B16B7BF20A1833600C0CEA1 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16B7B420A1833600C0CEA1 /* AFHTTPRequestOperationManager.m */; };
+		6B16B7C020A1833600C0CEA1 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16B7B520A1833600C0CEA1 /* AFURLRequestSerialization.m */; };
+		6B16B7C120A1833600C0CEA1 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16B7B620A1833600C0CEA1 /* AFHTTPRequestOperation.m */; };
+		6B16B7C220A1833600C0CEA1 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16B7B820A1833600C0CEA1 /* AFNetworkReachabilityManager.m */; };
+		6B16B7C320A1833600C0CEA1 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16B7B920A1833600C0CEA1 /* AFSecurityPolicy.m */; };
+		ED6FACBF2068C5BD00EE5039 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6FACBE2068C5BD00EE5039 /* AppDelegate.m */; };
+		ED6FACC22068C5BD00EE5039 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6FACC12068C5BD00EE5039 /* ViewController.m */; };
+		ED6FACC52068C5BD00EE5039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6FACC32068C5BD00EE5039 /* Main.storyboard */; };
+		ED6FACC72068C5BD00EE5039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6FACC62068C5BD00EE5039 /* Assets.xcassets */; };
+		ED6FACCA2068C5BD00EE5039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6FACC82068C5BD00EE5039 /* LaunchScreen.storyboard */; };
+		ED6FACCD2068C5BD00EE5039 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6FACCC2068C5BD00EE5039 /* main.m */; };
+		ED6FACD82068C71A00EE5039 /* XMHQDateUitil.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6FACD72068C71A00EE5039 /* XMHQDateUitil.m */; };
+		ED6FACDD2068CC5F00EE5039 /* XMHQDispatchCenterUitil.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6FACDC2068CC5F00EE5039 /* XMHQDispatchCenterUitil.m */; };
+		ED6FACE22068CDE800EE5039 /* XMHQQuickCacheUitil.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6FACE12068CDE800EE5039 /* XMHQQuickCacheUitil.m */; };
+		ED6FACE72068D00F00EE5039 /* XMHQStringUitil.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6FACE62068D00F00EE5039 /* XMHQStringUitil.m */; };
+		ED6FACEC2068D14300EE5039 /* XMHQSystemUitil.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6FACEB2068D14300EE5039 /* XMHQSystemUitil.m */; };
+		ED6FACF42068D36300EE5039 /* UIView+XMHQViewFrameUitil.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6FACF32068D36300EE5039 /* UIView+XMHQViewFrameUitil.m */; };
+		ED6FACF92068D72700EE5039 /* XMHQQuickUIUitil.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6FACF82068D72700EE5039 /* XMHQQuickUIUitil.m */; };
+		ED6FACFE206A2F4200EE5039 /* XMHQFileDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6FACFD206A2F4200EE5039 /* XMHQFileDownloadTask.m */; };
+		ED6FAD01206A396000EE5039 /* XMHQFileDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6FAD00206A396000EE5039 /* XMHQFileDownloadManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B16B7A820A1833600C0CEA1 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		6B16B7A920A1833600C0CEA1 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		6B16B7AA20A1833600C0CEA1 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		6B16B7AB20A1833600C0CEA1 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		6B16B7AC20A1833600C0CEA1 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		6B16B7AD20A1833600C0CEA1 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		6B16B7AE20A1833600C0CEA1 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		6B16B7AF20A1833600C0CEA1 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		6B16B7B020A1833600C0CEA1 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		6B16B7B120A1833600C0CEA1 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		6B16B7B220A1833600C0CEA1 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		6B16B7B320A1833600C0CEA1 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		6B16B7B420A1833600C0CEA1 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		6B16B7B520A1833600C0CEA1 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		6B16B7B620A1833600C0CEA1 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		6B16B7B720A1833600C0CEA1 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		6B16B7B820A1833600C0CEA1 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		6B16B7B920A1833600C0CEA1 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		6B16B7BA20A1833600C0CEA1 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		A67AA65FFD97D0D8A99A5D5F /* Pods_HQChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HQChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8A132A7813536941F5484AA /* Pods-HQChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HQChat/Pods-HQChat.debug.xcconfig"; sourceTree = "<group>"; };
+		C196E9C7E4EE3C599F80F453 /* Pods-HQChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HQChat/Pods-HQChat.release.xcconfig"; sourceTree = "<group>"; };
+		ED6FACBA2068C5BD00EE5039 /* HQChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6FACBD2068C5BD00EE5039 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ED6FACBE2068C5BD00EE5039 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ED6FACC02068C5BD00EE5039 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ED6FACC12068C5BD00EE5039 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ED6FACC42068C5BD00EE5039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED6FACC62068C5BD00EE5039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED6FACC92068C5BD00EE5039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED6FACCB2068C5BD00EE5039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6FACCC2068C5BD00EE5039 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED6FACD62068C71A00EE5039 /* XMHQDateUitil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQDateUitil.h; sourceTree = "<group>"; };
+		ED6FACD72068C71A00EE5039 /* XMHQDateUitil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMHQDateUitil.m; sourceTree = "<group>"; };
+		ED6FACD92068C82900EE5039 /* XMHQDateUitilMacrocDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQDateUitilMacrocDefine.h; sourceTree = "<group>"; };
+		ED6FACDB2068CC5F00EE5039 /* XMHQDispatchCenterUitil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQDispatchCenterUitil.h; sourceTree = "<group>"; };
+		ED6FACDC2068CC5F00EE5039 /* XMHQDispatchCenterUitil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMHQDispatchCenterUitil.m; sourceTree = "<group>"; };
+		ED6FACDE2068CD2A00EE5039 /* XMHQDispatchMacrocDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQDispatchMacrocDefine.h; sourceTree = "<group>"; };
+		ED6FACE02068CDE800EE5039 /* XMHQQuickCacheUitil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQQuickCacheUitil.h; sourceTree = "<group>"; };
+		ED6FACE12068CDE800EE5039 /* XMHQQuickCacheUitil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMHQQuickCacheUitil.m; sourceTree = "<group>"; };
+		ED6FACE32068CEE700EE5039 /* XMHQQuickCacheMacrocDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQQuickCacheMacrocDefine.h; sourceTree = "<group>"; };
+		ED6FACE52068D00F00EE5039 /* XMHQStringUitil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQStringUitil.h; sourceTree = "<group>"; };
+		ED6FACE62068D00F00EE5039 /* XMHQStringUitil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMHQStringUitil.m; sourceTree = "<group>"; };
+		ED6FACE82068D0C900EE5039 /* XMHQStringMacrocDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQStringMacrocDefine.h; sourceTree = "<group>"; };
+		ED6FACEA2068D14300EE5039 /* XMHQSystemUitil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQSystemUitil.h; sourceTree = "<group>"; };
+		ED6FACEB2068D14300EE5039 /* XMHQSystemUitil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMHQSystemUitil.m; sourceTree = "<group>"; };
+		ED6FACED2068D16D00EE5039 /* XMHQSystemMacrocDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQSystemMacrocDefine.h; sourceTree = "<group>"; };
+		ED6FACF22068D36300EE5039 /* UIView+XMHQViewFrameUitil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+XMHQViewFrameUitil.h"; sourceTree = "<group>"; };
+		ED6FACF32068D36300EE5039 /* UIView+XMHQViewFrameUitil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMHQViewFrameUitil.m"; sourceTree = "<group>"; };
+		ED6FACF52068D57000EE5039 /* XMHQUitils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQUitils.h; sourceTree = "<group>"; };
+		ED6FACF72068D72700EE5039 /* XMHQQuickUIUitil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQQuickUIUitil.h; sourceTree = "<group>"; };
+		ED6FACF82068D72700EE5039 /* XMHQQuickUIUitil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMHQQuickUIUitil.m; sourceTree = "<group>"; };
+		ED6FACFA2068D8FF00EE5039 /* XMHQQuickUIMacrocDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQQuickUIMacrocDefine.h; sourceTree = "<group>"; };
+		ED6FACFC206A2F4200EE5039 /* XMHQFileDownloadTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQFileDownloadTask.h; sourceTree = "<group>"; };
+		ED6FACFD206A2F4200EE5039 /* XMHQFileDownloadTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMHQFileDownloadTask.m; sourceTree = "<group>"; };
+		ED6FACFF206A396000EE5039 /* XMHQFileDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMHQFileDownloadManager.h; sourceTree = "<group>"; };
+		ED6FAD00206A396000EE5039 /* XMHQFileDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMHQFileDownloadManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED6FACB72068C5BD00EE5039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041342C9DF6570B803399471 /* Pods_HQChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B16B7A720A1833600C0CEA1 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				6B16B7A820A1833600C0CEA1 /* AFSecurityPolicy.h */,
+				6B16B7A920A1833600C0CEA1 /* AFNetworkReachabilityManager.h */,
+				6B16B7AA20A1833600C0CEA1 /* AFHTTPRequestOperation.h */,
+				6B16B7AB20A1833600C0CEA1 /* AFHTTPRequestOperationManager.h */,
+				6B16B7AC20A1833600C0CEA1 /* AFURLSessionManager.h */,
+				6B16B7AD20A1833600C0CEA1 /* AFURLRequestSerialization.h */,
+				6B16B7AE20A1833600C0CEA1 /* AFURLConnectionOperation.h */,
+				6B16B7AF20A1833600C0CEA1 /* AFURLResponseSerialization.m */,
+				6B16B7B020A1833600C0CEA1 /* AFHTTPSessionManager.m */,
+				6B16B7B120A1833600C0CEA1 /* AFURLConnectionOperation.m */,
+				6B16B7B220A1833600C0CEA1 /* AFURLResponseSerialization.h */,
+				6B16B7B320A1833600C0CEA1 /* AFURLSessionManager.m */,
+				6B16B7B420A1833600C0CEA1 /* AFHTTPRequestOperationManager.m */,
+				6B16B7B520A1833600C0CEA1 /* AFURLRequestSerialization.m */,
+				6B16B7B620A1833600C0CEA1 /* AFHTTPRequestOperation.m */,
+				6B16B7B720A1833600C0CEA1 /* AFNetworking.h */,
+				6B16B7B820A1833600C0CEA1 /* AFNetworkReachabilityManager.m */,
+				6B16B7B920A1833600C0CEA1 /* AFSecurityPolicy.m */,
+				6B16B7BA20A1833600C0CEA1 /* AFHTTPSessionManager.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		E18BC628968A6A11A2540199 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8A132A7813536941F5484AA /* Pods-HQChat.debug.xcconfig */,
+				C196E9C7E4EE3C599F80F453 /* Pods-HQChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED6FACB12068C5BD00EE5039 = {
+			isa = PBXGroup;
+			children = (
+				ED6FACBC2068C5BD00EE5039 /* HQChat */,
+				ED6FACBB2068C5BD00EE5039 /* Products */,
+				E18BC628968A6A11A2540199 /* Pods */,
+				FA931038EAE679715216959B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED6FACBB2068C5BD00EE5039 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED6FACBA2068C5BD00EE5039 /* HQChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED6FACBC2068C5BD00EE5039 /* HQChat */ = {
+			isa = PBXGroup;
+			children = (
+				ED6FACD32068C61C00EE5039 /* Dependcy */,
+				ED6FACBD2068C5BD00EE5039 /* AppDelegate.h */,
+				ED6FACBE2068C5BD00EE5039 /* AppDelegate.m */,
+				ED6FACC02068C5BD00EE5039 /* ViewController.h */,
+				ED6FACC12068C5BD00EE5039 /* ViewController.m */,
+				ED6FACC32068C5BD00EE5039 /* Main.storyboard */,
+				ED6FACC62068C5BD00EE5039 /* Assets.xcassets */,
+				ED6FACC82068C5BD00EE5039 /* LaunchScreen.storyboard */,
+				ED6FACCB2068C5BD00EE5039 /* Info.plist */,
+				ED6FACCC2068C5BD00EE5039 /* main.m */,
+			);
+			path = HQChat;
+			sourceTree = "<group>";
+		};
+		ED6FACD32068C61C00EE5039 /* Dependcy */ = {
+			isa = PBXGroup;
+			children = (
+				6B16B7A720A1833600C0CEA1 /* AFNetworking */,
+				ED6FACFB206A2EC100EE5039 /* DownloadManager */,
+				ED6FACD42068C6AF00EE5039 /* XMHQUitils */,
+			);
+			path = Dependcy;
+			sourceTree = "<group>";
+		};
+		ED6FACD42068C6AF00EE5039 /* XMHQUitils */ = {
+			isa = PBXGroup;
+			children = (
+				ED6FACF62068D70000EE5039 /* QuickUIUitil */,
+				ED6FACEE2068D2B500EE5039 /* UitilCategory */,
+				ED6FACE92068D13400EE5039 /* SystemUitil */,
+				ED6FACE42068CFF400EE5039 /* StringUitil */,
+				ED6FACDF2068CDB900EE5039 /* QuickCacheUitil */,
+				ED6FACDA2068CC3600EE5039 /* DispatchCenterUitil */,
+				ED6FACD52068C6ED00EE5039 /* DateUitil */,
+				ED6FACF52068D57000EE5039 /* XMHQUitils.h */,
+			);
+			path = XMHQUitils;
+			sourceTree = "<group>";
+		};
+		ED6FACD52068C6ED00EE5039 /* DateUitil */ = {
+			isa = PBXGroup;
+			children = (
+				ED6FACD62068C71A00EE5039 /* XMHQDateUitil.h */,
+				ED6FACD72068C71A00EE5039 /* XMHQDateUitil.m */,
+				ED6FACD92068C82900EE5039 /* XMHQDateUitilMacrocDefine.h */,
+			);
+			path = DateUitil;
+			sourceTree = "<group>";
+		};
+		ED6FACDA2068CC3600EE5039 /* DispatchCenterUitil */ = {
+			isa = PBXGroup;
+			children = (
+				ED6FACDB2068CC5F00EE5039 /* XMHQDispatchCenterUitil.h */,
+				ED6FACDC2068CC5F00EE5039 /* XMHQDispatchCenterUitil.m */,
+				ED6FACDE2068CD2A00EE5039 /* XMHQDispatchMacrocDefine.h */,
+			);
+			path = DispatchCenterUitil;
+			sourceTree = "<group>";
+		};
+		ED6FACDF2068CDB900EE5039 /* QuickCacheUitil */ = {
+			isa = PBXGroup;
+			children = (
+				ED6FACE02068CDE800EE5039 /* XMHQQuickCacheUitil.h */,
+				ED6FACE12068CDE800EE5039 /* XMHQQuickCacheUitil.m */,
+				ED6FACE32068CEE700EE5039 /* XMHQQuickCacheMacrocDefine.h */,
+			);
+			path = QuickCacheUitil;
+			sourceTree = "<group>";
+		};
+		ED6FACE42068CFF400EE5039 /* StringUitil */ = {
+			isa = PBXGroup;
+			children = (
+				ED6FACE52068D00F00EE5039 /* XMHQStringUitil.h */,
+				ED6FACE62068D00F00EE5039 /* XMHQStringUitil.m */,
+				ED6FACE82068D0C900EE5039 /* XMHQStringMacrocDefine.h */,
+			);
+			path = StringUitil;
+			sourceTree = "<group>";
+		};
+		ED6FACE92068D13400EE5039 /* SystemUitil */ = {
+			isa = PBXGroup;
+			children = (
+				ED6FACEA2068D14300EE5039 /* XMHQSystemUitil.h */,
+				ED6FACEB2068D14300EE5039 /* XMHQSystemUitil.m */,
+				ED6FACED2068D16D00EE5039 /* XMHQSystemMacrocDefine.h */,
+			);
+			path = SystemUitil;
+			sourceTree = "<group>";
+		};
+		ED6FACEE2068D2B500EE5039 /* UitilCategory */ = {
+			isa = PBXGroup;
+			children = (
+				ED6FACF22068D36300EE5039 /* UIView+XMHQViewFrameUitil.h */,
+				ED6FACF32068D36300EE5039 /* UIView+XMHQViewFrameUitil.m */,
+			);
+			path = UitilCategory;
+			sourceTree = "<group>";
+		};
+		ED6FACF62068D70000EE5039 /* QuickUIUitil */ = {
+			isa = PBXGroup;
+			children = (
+				ED6FACF72068D72700EE5039 /* XMHQQuickUIUitil.h */,
+				ED6FACF82068D72700EE5039 /* XMHQQuickUIUitil.m */,
+				ED6FACFA2068D8FF00EE5039 /* XMHQQuickUIMacrocDefine.h */,
+			);
+			path = QuickUIUitil;
+			sourceTree = "<group>";
+		};
+		ED6FACFB206A2EC100EE5039 /* DownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				ED6FACFC206A2F4200EE5039 /* XMHQFileDownloadTask.h */,
+				ED6FACFD206A2F4200EE5039 /* XMHQFileDownloadTask.m */,
+				ED6FACFF206A396000EE5039 /* XMHQFileDownloadManager.h */,
+				ED6FAD00206A396000EE5039 /* XMHQFileDownloadManager.m */,
+			);
+			path = DownloadManager;
+			sourceTree = "<group>";
+		};
+		FA931038EAE679715216959B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A67AA65FFD97D0D8A99A5D5F /* Pods_HQChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED6FACB92068C5BD00EE5039 /* HQChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6FACD02068C5BE00EE5039 /* Build configuration list for PBXNativeTarget "HQChat" */;
+			buildPhases = (
+				7BC5FB55501183DE78A89D01 /* [CP] Check Pods Manifest.lock */,
+				ED6FACB62068C5BD00EE5039 /* Sources */,
+				ED6FACB72068C5BD00EE5039 /* Frameworks */,
+				ED6FACB82068C5BD00EE5039 /* Resources */,
+				B0BA720093DF0AC59D2D2D3D /* [CP] Embed Pods Frameworks */,
+				EE2C4AA4A4F3585736DE76A4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HQChat;
+			productName = HQChat;
+			productReference = ED6FACBA2068C5BD00EE5039 /* HQChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED6FACB22068C5BD00EE5039 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XMHQ;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = T59Team;
+				TargetAttributes = {
+					ED6FACB92068C5BD00EE5039 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ED6FACB52068C5BD00EE5039 /* Build configuration list for PBXProject "HQChat" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED6FACB12068C5BD00EE5039;
+			productRefGroup = ED6FACBB2068C5BD00EE5039 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED6FACB92068C5BD00EE5039 /* HQChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED6FACB82068C5BD00EE5039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6FACCA2068C5BD00EE5039 /* LaunchScreen.storyboard in Resources */,
+				ED6FACC72068C5BD00EE5039 /* Assets.xcassets in Resources */,
+				ED6FACC52068C5BD00EE5039 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BC5FB55501183DE78A89D01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HQChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0BA720093DF0AC59D2D2D3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HQChat/Pods-HQChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HQChat/Pods-HQChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE2C4AA4A4F3585736DE76A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HQChat/Pods-HQChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED6FACB62068C5BD00EE5039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6FACE22068CDE800EE5039 /* XMHQQuickCacheUitil.m in Sources */,
+				ED6FACDD2068CC5F00EE5039 /* XMHQDispatchCenterUitil.m in Sources */,
+				6B16B7C220A1833600C0CEA1 /* AFNetworkReachabilityManager.m in Sources */,
+				6B16B7C120A1833600C0CEA1 /* AFHTTPRequestOperation.m in Sources */,
+				ED6FACE72068D00F00EE5039 /* XMHQStringUitil.m in Sources */,
+				ED6FACC22068C5BD00EE5039 /* ViewController.m in Sources */,
+				6B16B7BD20A1833600C0CEA1 /* AFURLConnectionOperation.m in Sources */,
+				6B16B7C320A1833600C0CEA1 /* AFSecurityPolicy.m in Sources */,
+				ED6FACF42068D36300EE5039 /* UIView+XMHQViewFrameUitil.m in Sources */,
+				6B16B7BC20A1833600C0CEA1 /* AFHTTPSessionManager.m in Sources */,
+				6B16B7BB20A1833600C0CEA1 /* AFURLResponseSerialization.m in Sources */,
+				ED6FACF92068D72700EE5039 /* XMHQQuickUIUitil.m in Sources */,
+				6B16B7C020A1833600C0CEA1 /* AFURLRequestSerialization.m in Sources */,
+				6B16B7BE20A1833600C0CEA1 /* AFURLSessionManager.m in Sources */,
+				ED6FACFE206A2F4200EE5039 /* XMHQFileDownloadTask.m in Sources */,
+				ED6FACD82068C71A00EE5039 /* XMHQDateUitil.m in Sources */,
+				ED6FACCD2068C5BD00EE5039 /* main.m in Sources */,
+				ED6FAD01206A396000EE5039 /* XMHQFileDownloadManager.m in Sources */,
+				ED6FACEC2068D14300EE5039 /* XMHQSystemUitil.m in Sources */,
+				6B16B7BF20A1833600C0CEA1 /* AFHTTPRequestOperationManager.m in Sources */,
+				ED6FACBF2068C5BD00EE5039 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED6FACC32068C5BD00EE5039 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED6FACC42068C5BD00EE5039 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED6FACC82068C5BD00EE5039 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED6FACC92068C5BD00EE5039 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED6FACCE2068C5BE00EE5039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ED6FACCF2068C5BE00EE5039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED6FACD12068C5BE00EE5039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8A132A7813536941F5484AA /* Pods-HQChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HQChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.604.HQChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED6FACD22068C5BE00EE5039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C196E9C7E4EE3C599F80F453 /* Pods-HQChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HQChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.604.HQChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED6FACB52068C5BD00EE5039 /* Build configuration list for PBXProject "HQChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6FACCE2068C5BE00EE5039 /* Debug */,
+				ED6FACCF2068C5BE00EE5039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED6FACD02068C5BE00EE5039 /* Build configuration list for PBXNativeTarget "HQChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6FACD12068C5BE00EE5039 /* Debug */,
+				ED6FACD22068C5BE00EE5039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED6FACB22068C5BD00EE5039 /* Project object */;
+}

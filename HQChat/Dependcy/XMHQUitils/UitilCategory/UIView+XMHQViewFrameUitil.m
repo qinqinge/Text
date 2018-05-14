@@ -1,0 +1,256 @@
+//
+//  UIView+XMHQViewFrameUitil.m
+//  HQChat
+//
+//  Created by PX_Mac on 2018/3/26.
+//  Copyright © 2018年 T59Team. All rights reserved.
+//
+
+#import "UIView+XMHQViewFrameUitil.h"
+
+@implementation UIView (XMHQViewFrameUitil)
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)xmhq_left {
+    return self.frame.origin.x;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setXmhq_left:(CGFloat)xmhq_left {
+    CGRect frame = self.frame;
+    frame.origin.x = xmhq_left;
+    self.frame = frame;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)xmhq_top {
+    return self.frame.origin.y;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setXmhq_top:(CGFloat)y {
+    CGRect frame = self.frame;
+    frame.origin.y = y;
+    self.frame = frame;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)xmhq_right {
+    return self.frame.origin.x + self.frame.size.width;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setXmhq_right:(CGFloat)right {
+    CGRect frame = self.frame;
+    frame.origin.x = right - frame.size.width;
+    self.frame = frame;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)xmhq_bottom {
+    return self.frame.origin.y + self.frame.size.height;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setXmhq_bottom:(CGFloat)bottom {
+    CGRect frame = self.frame;
+    frame.origin.y = bottom - frame.size.height;
+    self.frame = frame;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)centerX {
+    return self.center.x;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setCenterX:(CGFloat)centerX {
+    self.center = CGPointMake(centerX, self.center.y);
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)centerY {
+    return self.center.y;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setCenterY:(CGFloat)centerY {
+    self.center = CGPointMake(self.center.x, centerY);
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)xmhq_width {
+    return self.frame.size.width;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setXmhq_width:(CGFloat)width {
+    CGRect frame = self.frame;
+    frame.size.width = width;
+    self.frame = frame;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)xmhq_height {
+    return self.frame.size.height;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setXmhq_height:(CGFloat)height {
+    CGRect frame = self.frame;
+    frame.size.height = height;
+    self.frame = frame;
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGPoint)xmhq_origin {
+    return self.frame.origin;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setXmhq_origin:(CGPoint)origin {
+    CGRect frame = self.frame;
+    frame.origin = origin;
+    self.frame = frame;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGSize)xmhq_size {
+    return self.frame.size;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)xmhq_centerX {
+    return self.center.x;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setXmhq_centerX:(CGFloat)centerX {
+    self.center = CGPointMake(centerX, self.center.y);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)xmhq_centerY {
+    return self.center.y;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setXmhq_centerY:(CGFloat)centerY {
+    self.center = CGPointMake(self.center.x, centerY);
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setXmhq_size:(CGSize)size {
+    CGRect frame = self.frame;
+    frame.size = size;
+    self.frame = frame;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGPoint)xmhq_topRight
+{
+    return CGPointMake(self.frame.origin.x+self.frame.size.width,self.frame.origin.y);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setXmhq_topRight:(CGPoint)xmhq_topRight
+{
+    CGRect frame = self.frame;
+    
+    CGFloat xdetal = xmhq_topRight.x - frame.origin.x - frame.size.width;
+    frame.origin.x = frame.origin.x + xdetal;
+    
+    frame.origin.y = xmhq_topRight.y;
+    
+    self.frame = frame;
+    
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGPoint)xmhq_bottomLeft
+{
+    return CGPointMake(self.frame.origin.x,self.frame.origin.y+self.frame.size.height);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setXmhq_bottomLeft:(CGPoint)xmhq_bottomLeft
+{
+    CGRect frame = self.frame;
+    
+    CGFloat ydetal = xmhq_bottomLeft.y - frame.origin.y - frame.size.height;
+    frame.origin.y = frame.origin.y + ydetal;
+    
+    frame.origin.x = xmhq_bottomLeft.x;
+    
+    self.frame = frame;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGPoint)xmhq_bottomRight
+{
+    return CGPointMake(self.frame.origin.x+self.frame.size.width,self.frame.origin.y+self.frame.size.height);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setXmhq_bottomRight:(CGPoint)xmhq_bottomRight
+{
+    CGRect frame = self.frame;
+    
+    CGFloat xdetal = xmhq_bottomRight.x - frame.origin.x - frame.size.width;
+    frame.origin.x = frame.origin.x + xdetal;
+    
+    CGFloat ydetal = xmhq_bottomRight.y - frame.origin.y - frame.size.height;
+    frame.origin.y = frame.origin.y + ydetal;
+    
+    self.frame = frame;
+}
+
+- (CGFloat)xmhq_rightToSuper
+{
+    return self.superview.bounds.size.width - self.frame.size.width - self.frame.origin.x;
+}
+
+- (void)setXmhq_rightToSuper:(CGFloat)rightToSuper
+{
+    CGRect frame = self.frame;
+    
+    frame.origin.x =  self.superview.bounds.size.width - self.frame.size.width  - rightToSuper;
+    self.frame = frame;
+}
+
+- (CGFloat)xmhq_bottomToSuper
+{
+    return self.superview.bounds.size.height - self.frame.size.height - self.frame.origin.y;
+}
+
+- (void)setXmhq_bottomToSuper:(CGFloat)bottomToSuper
+{
+    CGRect frame = self.frame;
+    
+    frame.origin.y =  self.superview.bounds.size.height - self.frame.size.height  - bottomToSuper;
+    self.frame = frame;
+}
+
+@end
